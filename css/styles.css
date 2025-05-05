@@ -3,18 +3,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    min-height: 100vh; /* Чтобы контент занимал всю высоту экрана */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 /* Стили для шапки сайта */
 .site-header {
-    background-color: #A0522D; /* Коричневый цвет (Sienna) */
+    background-color: #A0522D;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
-    position: relative; /* Для позиционирования кнопок */
+    position: relative;
 }
 
 .header-container {
@@ -28,24 +27,22 @@ body {
 .site-header h1 {
     font-size: 2.5em;
     margin: 0;
+    order: 2; /* Помещаем заголовок в середину */
 }
 
 /* Стили для кнопок в шапке */
 .header-button {
-    background-color: #800080; /* Фиолетовый цвет (Purple) */
+    background-color: #800080;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 20px; /* Закругленные углы */
+    border-radius: 20px;
     text-decoration: none;
     font-size: 1em;
-}
-
-.header-button.left {
-    margin-right: auto; /* Прижимает кнопку к левому краю */
+    order: 1; /* Помещаем кнопки по краям */
 }
 
 .header-button.right {
-    margin-left: auto; /* Прижимает кнопку к правому краю */
+    order: 3; /* Помещаем правую кнопку в конец */
 }
 
 /* Стили для основного контента */
@@ -55,11 +52,11 @@ main {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-grow: 1; /* Чтобы main занимал все свободное место */
+    flex-grow: 1;
 }
 
 .intro p {
-    font-size: 1.4em; /* Крупный размер шрифта */
+    font-size: 1.4em;
     line-height: 1.6;
 }
 
@@ -71,12 +68,12 @@ main {
 /* Стили для фонового изображения */
 .bottom-image {
     width: 100%;
-    height: 33.33vh; /* 1/3 высоты экрана */
-    opacity: 0.3; /* Прозрачность 50% */
+    height: 33.33vh;
+    opacity: 0.25;
 }
 
 .bottom-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Растягивает изображение, чтобы заполнить контейнер */
+    object-fit: cover;
 }
