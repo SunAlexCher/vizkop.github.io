@@ -1,0 +1,30 @@
+/* Стили для страницы "Проблема чтения" */
+.reading-problem-main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.problem-description p {
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+
+.images-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.image-container {
+    width: 48%; /* Чтобы изображения занимали примерно половину ширины */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block; /* Убирает лишний отступ снизу изображения */
+}
