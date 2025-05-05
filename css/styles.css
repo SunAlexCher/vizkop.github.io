@@ -14,16 +14,38 @@ body {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: relative; /* Для позиционирования кнопок */
 }
 
 .header-container {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-header h1 {
     font-size: 2.5em;
     margin: 0;
+}
+
+/* Стили для кнопок в шапке */
+.header-button {
+    background-color: #800080; /* Фиолетовый цвет (Purple) */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px; /* Закругленные углы */
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.header-button.left {
+    margin-right: auto; /* Прижимает кнопку к левому краю */
+}
+
+.header-button.right {
+    margin-left: auto; /* Прижимает кнопку к правому краю */
 }
 
 /* Стили для основного контента */
