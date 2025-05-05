@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    min-height: 100vh; /* Чтобы контент занимал всю высоту экрана */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Стили для шапки сайта */
@@ -23,24 +26,6 @@ body {
     margin: 0;
 }
 
-/* Стили для навигации */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
 /* Стили для основного контента */
 main {
     width: 80%;
@@ -48,6 +33,7 @@ main {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Чтобы main занимал все свободное место */
 }
 
 .intro p {
@@ -60,15 +46,14 @@ main {
     margin-top: 30px;
 }
 
-.featured-ways h3 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
+/* Стили для фонового изображения */
+.bottom-image {
+    width: 100%;
+    height: 33.33vh; /* 1/3 высоты экрана */
 }
 
-/* Стили для подвала */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #ddd;
-    font-size: 0.8em;
+.bottom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Растягивает изображение, чтобы заполнить контейнер */
 }
