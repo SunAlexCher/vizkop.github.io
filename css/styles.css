@@ -34,10 +34,10 @@ body {
 .header-button {
     background-color: #800080;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Увеличиваем отступы */
     border-radius: 20px;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.1em; /* Немного увеличиваем размер шрифта */
     order: 1; /* Помещаем кнопки по краям */
 }
 
@@ -69,7 +69,7 @@ main {
 .bottom-image {
     width: 100%;
     height: 33.33vh;
-    opacity: 0.75;
+    opacity: 0.75; /* Новое значение прозрачности */
 }
 
 .bottom-image img {
