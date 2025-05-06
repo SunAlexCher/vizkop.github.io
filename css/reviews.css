@@ -1,5 +1,10 @@
 /* Стили для страницы "Отзывы" */
 
+.header-text {
+    color: #fff;
+    font-size: 1.8em; /* Как на странице "Проблема чтения" */
+}
+
 .reviews-main {
     width: 80%;
     margin: 20px auto;
