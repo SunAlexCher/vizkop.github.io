@@ -2,7 +2,7 @@
 
 .header-text {
     color: #fff;
-    font-size: 1.2em; /* Можешь настроить размер шрифта */
+    font-size: 1.8em; /* Увеличенный размер шрифта */
 }
 
 .reading-problem-main {
@@ -12,12 +12,12 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
-    position: relative; /*  Делаем main контейнером для абсолютного позиционирования images-section*/
-    min-height: 70vh; /*  Устанавливаем минимальную высоту для main */
+    /* position: relative;  Делаем main контейнером для абсолютного позиционирования images-section */
+    /* min-height: 70vh;  Устанавливаем минимальную высоту для main */
 }
 
 .problem-description p {
-    font-size: 1.8em;
+    font-size: 1.4em;
     line-height: 1.6;
 }
 
@@ -25,7 +25,8 @@
     display: flex;
     justify-content: space-between; /* Распределяем пространство между изображениями */
     margin-top: 50px; /* Увеличим отступ от текста */
-    position: absolute; /* Абсолютное позиционирование */
+    /* position: absolute;  Абсолютное позиционирование */
+    position: relative;
     bottom: 0; /* Прижимаем к низу страницы */
     width: 100%; /* Растягиваем на всю ширину */
     padding: 0 10px; /* Добавляем немного отступов по бокам */
