@@ -1,4 +1,10 @@
 /* Стили для страницы "Проблема чтения" */
+
+.header-text {
+    color: #fff;
+    font-size: 1.2em; /* Можешь настроить размер шрифта */
+}
+
 .reading-problem-main {
     width: 80%;
     margin: 20px auto;
@@ -6,6 +12,8 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
+    position: relative; /*  Делаем main контейнером для абсолютного позиционирования images-section*/
+    min-height: 70vh; /*  Устанавливаем минимальную высоту для main */
 }
 
 .problem-description p {
@@ -15,16 +23,24 @@
 
 .images-section {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    justify-content: space-between; /* Распределяем пространство между изображениями */
+    margin-top: 50px; /* Увеличим отступ от текста */
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 0; /* Прижимаем к низу страницы */
+    width: 100%; /* Растягиваем на всю ширину */
+    padding: 0 10px; /* Добавляем немного отступов по бокам */
 }
 
 .image-container {
     width: 48%; /* Чтобы изображения занимали примерно половину ширины */
 }
 
+.image-container.right {
+    margin-right: 0; /* Убираем отступ справа у второго изображения */
+}
+
 .image-container img {
     width: 100%;
     height: auto;
-    display: block; /* Убирает лишний отступ снизу изображения */
+    display: block;
 }
