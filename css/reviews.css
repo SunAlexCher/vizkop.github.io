@@ -1,0 +1,35 @@
+/* Стили для страницы "Отзывы" */
+
+.reviews-main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-description p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    text-align: center; /* Центрируем текст */
+}
+
+.reviews-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-grow: 1; /* Занимает все доступное пространство */
+}
+
+.image-container {
+    width: 48%; /* Чтобы изображения занимали примерно половину ширины */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; /* Заполняет всю высоту контейнера */
+    object-fit: cover; /* Обрезает изображение, чтобы заполнить контейнер */
+}
