@@ -134,3 +134,34 @@ main {
     height: 100%;
     object-fit: cover;
 }
+
+/*  ---------- Стили для kinnybingo.html ----------  */
+
+/* Стили для кнопки "Визуальная копилка" на странице kinnybingo.html */
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Стили для текста-вступления на странице kinnybingo.html */
+.intro {
+  margin-bottom: 20px;
+}
+
+/* Стили для секции с фотографиями на странице kinnybingo.html */
+.character-section {
+  text-align: left; /* Выравнивание заголовка и изображений по левому краю */
+}
+
+.image-container {
+  margin-top: 10px; /* Отступ от заголовка */
+}
+
+.image-container img {
+  margin-bottom: 15px; /* Отступ между изображениями */
+  display: block; /* Чтобы margin-bottom работал корректно */
+}
