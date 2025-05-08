@@ -1,0 +1,5 @@
+<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css)$">
+  <ifModule mod_headers.c>
+    Header set Cache-Control "max-age=31536000, public"
+  </ifModule>
+</filesMatch>
