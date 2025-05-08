@@ -140,25 +140,35 @@ main {
 /* Стили для кнопки "Визуальная копилка" на странице kinnybingo.html */
 .back-button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px; /*  Соответствует стилю кнопок в шапке */
+  font-size: 1.2em; /*  Размер шрифта как у кнопок в шапке */
 }
 
 /* Стили для текста-вступления на странице kinnybingo.html */
-.intro {
+.intro p { /* Применяем стили к параграфу внутри .intro */
   margin-bottom: 20px;
+  font-size: 1.2em; /* Увеличиваем размер текста */
 }
 
 /* Стили для секции с фотографиями на странице kinnybingo.html */
 .character-section {
-  text-align: left; /* Выравнивание заголовка и изображений по левому краю */
+  text-align: center; /* Выравнивание заголовка и изображений по центру */
+}
+
+/* Стили для заголовка "Преступление и наказание" */
+.character-title {
+    font-size: 2.5em; /* Увеличиваем размер заголовка */
+    margin-bottom: 10px; /* Добавляем отступ снизу */
 }
 
 .image-container {
   margin-top: 10px; /* Отступ от заголовка */
+  text-align: left; /* Возвращаем выравнивание изображений по левому краю */
+  margin-left: auto;  /*  Выравниваем блок по центру */
+  margin-right: auto; /*  Выравниваем блок по центру */
+  width: 700px; /*  Чтобы контейнер не растягивался на всю ширину */
+
 }
 
 .image-container img {
