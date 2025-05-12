@@ -2,10 +2,12 @@
 
 /* Стили для кнопки "Визуальная копилка" на странице kinnybingo.html */
 .back-button {
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 20px; /*  Соответствует стилю кнопок в шапке */
-  font-size: 1.2em; /*  Размер шрифта как у кнопок в шапке */
+    display: block;          /* Делаем ссылку блочным элементом */
+    text-align: center;     /* Центрируем текст */
+    text-decoration: underline; /* Добавляем подчеркивание */
+    font-size: 2em;          /* Увеличиваем размер шрифта */
+    margin: 0 auto;          /* Центрируем элемент по горизонтали */
+    width: fit-content;      /* Подгоняем ширину под содержимое */
 }
 
 /* Стили для текста-вступления на странице kinnybingo.html */
