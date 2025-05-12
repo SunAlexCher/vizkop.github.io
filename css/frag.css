@@ -1,0 +1,19 @@
+.film-fragment {
+  margin-bottom: 20px; /* Отступ между фрагментами */
+  padding: 10px;
+  border: 1px solid #ccc; /* Рамка для каждого фрагмента */
+  border-radius: 5px;
+}
+
+.film-fragment h3 {
+  margin-top: 0; /* Убираем отступ сверху заголовка */
+}
+
+.film-fragment a {
+  display: inline-block; /* Делаем ссылку блочной для отступов */
+  padding: 5px 10px;
+  background-color: #007bff; /* Синий цвет */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
